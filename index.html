@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <title>slick.js</title>
+</head>
+
+<body>
+    <div class="전체">
+        <div class="첫째">`
+            <div class="icon">
+                <i class="fas fa-star" 
+                data-aos="fade-up" 
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-back"
+                ></i>
+                <i class="fas fa-star" 
+                data-aos="fade-up"
+                data-aos-delay="200"     
+                data-aos-duration="1000" 
+                data-aos-easing="ease-in-out-back"
+                ></i>
+                <i class="fas fa-star" 
+                data-aos="fade-up"
+                data-aos-delay="300"     
+                data-aos-duration="1000" 
+                data-aos-easing="ease-in-out-back"
+                ></i>
+                <i class="fas fa-star" 
+                data-aos="fade-up"
+                data-aos-delay="400"     
+                data-aos-duration="1000" 
+                data-aos-easing="ease-in-out-back"
+                ></i>
+                <i class="far fa-star" 
+                data-aos="fade-up"
+                data-aos-delay="500"     
+                data-aos-duration="1000" 
+                data-aos-easing="ease-in-out-back"
+                ></i>
+            </div>
+            <div class="제목">
+                <h3>제목입니다.</h3>
+            </div>
+            <div class="slickWrap">
+                <div>
+                    <img src="img/slider1.jpg" alt="slider1">
+                </div>
+                <div>
+                    <img src="img/slider2.jpg" alt="slider2">
+                </div>
+                <div>
+                    <img src="img/slider3.jpg" alt="slider3">
+                </div>
+            </div>
+        </div><!-- 첫째 -->
+        <div class="둘째 clear">
+            <div class="둘자손 둘자식1"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            >둘자식1</div>
+            <div class="둘자손 둘자식2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            >둘자식2</div>
+            <div class="둘자손 둘자식3"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            >둘자식3</div>
+            <div class="둘자손 둘자식4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            >
+                <div class="slick2">
+                    <div>
+                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000086/86271/86271206652_727.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000086/86271/86271206651_727.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000086/86271/86271206942_727.jpg" alt="">
+                    </div>
+                  </div>
+            </div>
+        </div><!-- 둘째 -->
+        <div class="셋째">
+            <div class="셋째영역 clear">
+                <div class="셋자손 셋자식1"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                >셋자식1</div>
+                <div class="셋자손 셋자식2"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+                >셋자식2</div>
+                <div class="셋자손 셋자식3"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                >셋자식3</div>
+            </div>
+        </div><!-- 셋째 -->
+
+        <div class="넷째 clear">
+            <div class="넷자손 넷자식1">넷사식1</div>
+            <div class="넷자손 넷자식2">넷사식2</div>
+            <div class="넷자손 넷자식3">넷사식3</div>
+            <div class="넷자손 넷자식4">넷사식4</div>
+        </div><!-- 넷째 -->
+
+        <div class="다째 clear">
+            <div class="다자손 다자식1">다자식1</div>
+            <div class="다자손 다자식2">다자식2</div>
+        </div>
+
+        <div class="여섯 clear">
+            <div class="여손자 여자식1">여자식1</div>
+            <div class="여손자 여자식2">여자식2</div>
+            <div class="여손자 여자식3">여자식3</div>
+            <div class="여손자 여자식4">여자식4</div>
+            <div class="여손자 여자식5">여자식5</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+        $(document).ready(function () {
+            AOS.init();
+
+            $('.slickWrap').slick({
+                //setting - name: setting - value
+                autoplay:true,
+            });
+            $('.slick2').slick({
+                //setting - name: setting - value
+                //autoplay:true,
+                arrows:false,
+                dots:true
+            });
+
+        });
+    </script>
+</body>
+
+</html>
